@@ -1,0 +1,21 @@
+<div class="center">
+	<i class="far fa-comments top-icon"></i>
+	<h3>Chat_app</h3>
+	<P>by mori</P>
+</div>
+<div class="row">
+	<div class="col-4"></div>
+	<div class="col-4">
+	  <% if user_signed_in? %>
+	    <%= link_to rooms_show_path do %>
+  	      <div class="btn btn-primary btn-block">Go To Free Room</div>
+  	    <% end %>
+      <% else %>
+  	    <%= link_to new_user_session_path do %>
+  	      <div class="btn btn-primary btn-block">Log in</div>
+  	    <% end %>
+  	  <% end %>
+	</div>
+	<div class="col-4"></div>
+</div>
+

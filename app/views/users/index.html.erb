@@ -1,0 +1,8 @@
+<h1>User一覧</h1>
+<% @users.each do |user| %>
+  <li>
+  	<%= link_to user_path(user) do %>
+  	  <div class="btn btn-success"><%= user.name %></div>
+  	<% end %>
+  </li>
+<% end %>
